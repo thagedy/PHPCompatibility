@@ -83,7 +83,7 @@ class ForbiddenNegativeBitshiftSniffTest extends BaseSniffTest
             array(6),
             array(7),
             array(8),
-            //array(9), - currently gives a false positive, @todo: uncomment when fixed.
+            array(9), - currently gives a false positive, @todo: uncomment when fixed.
             array(12),
         );
     }

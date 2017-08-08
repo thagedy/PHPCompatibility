@@ -57,15 +57,20 @@ class ForbiddenNegativeBitshiftSniff extends Sniff
         if ($nextNumber === false || ($stackPtr + 1) === $nextNumber) {
             return;
         }
-
-        $hasMinusSign = $phpcsFile->findNext(T_MINUS, $stackPtr + 1, $nextNumber, false, null, true);
-        if ($hasMinusSign === false) {
+        
+        $MinusSign = $phpcsFile->findNext(T_MINUS, $stackPtr + 1, $nextNumber, false, null, true);
+        if ($MinusSign === false) {
             return;
         }
 
+        $nextVariable = $phpcsFile->findNext(array(T_VARIABLE, T_CONST, T_STRING, T_DNUMBER, T_CONSTANT_ENCAPSED_STRING, T_STRING_VARNAME, T_NUM_STRING, T_ENCAPSED_AND_WHITESPACE), $stackPtr + 1, $MinusSign, false, null, true);
+        if ($nextVariable !== false) {
+            return;
+        }
+        
         $phpcsFile->addError(
             'Bitwise shifts by negative number will throw an ArithmeticError in PHP 7.0',
-            $hasMinusSign,
+            $MinusSign,
             'Found'
         );
 
