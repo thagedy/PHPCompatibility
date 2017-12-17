@@ -15,6 +15,40 @@ From version 8.0.0 onwards, [Semantic Versioning](http://semver.org/) is used.
 _Nothing yet._
 
 
+## [8.1.0] - 2017-12-15
+
+See all related issues and PRs in the [8.1.0 milestone].
+
+### Added
+- :star2: New `MagicAutoloadDeprecation` sniff to detect deprecated __autoload functions as deprecated in PHP 7.2. [#540](https://github.com/wimg/PHPCompatibility/pull/540)
+- :star2: New `DynamicAccessToStatic` sniff to detect dynamic access to static methods and properties, as well as class constants, prior to PHP 5.3. [#535](https://github.com/wimg/PHPCompatibility/pull/535)
+- :star2: New `NewConstants` and `RemovedConstants` sniffs to detect usage of new/removed PHP constants. [#526](https://github.com/wimg/PHPCompatibility/pull/525)
+- :star2: New `OptionalRequiredFunctionParameter` sniff to check for missing function call parameters which were required and only became optional in a later PHP version. [#524](https://github.com/wimg/PHPCompatibility/pull/524)
+- :star: `RemovedGlobalVariables` : detection of the use of $php_errormsg with track_errors. [#528](https://github.com/wimg/PHPCompatibility/pull/528)
+- :star: `NewFunctions` : detection of all new PHP 7.2 functions added. [#522](https://github.com/wimg/PHPCompatibility/pull/522)
+- :star: Build/PHPCS : added array indentation check. [#538](https://github.com/wimg/PHPCompatibility/pull/538)
+- :books: Documentation : added reporting usage instructions. [#533](https://github.com/wimg/PHPCompatibility/pull/533)
+- :wrench: Travis : build tests are now being run against PHP 7.2 as well. [#511](https://github.com/wimg/PHPCompatibility/pull/511)  
+
+### Changed
+- :pushpin: `NewClosures` : downgrade "$this found in closure outside class" to warning [#536](https://github.com/wimg/PHPCompatibility/pull/535)
+- :rewind: `NewLanguageConstructs` : updated the version number for T_COALESCE_EQUAL [#523](https://github.com/wimg/PHPCompatibility/pull/523)
+- :pencil2: Sniff:getTestVersion() : simplified regex logic [#520](https://github.com/wimg/PHPCompatibility/pull/520)
+
+### Fixed
+- :wrench: Fixed PHPCS whitespaces. [#543](https://github.com/wimg/PHPCompatibility/pull/543)
+- :wrench: Improved check for superfluous whitespaces in files. [#542](https://github.com/wimg/PHPCompatibility/pull/542)
+- :umbrella: Fixed some unintentional syntax errors in test files. [#539](https://github.com/wimg/PHPCompatibility/pull/539)
+- :wrench: PHPCS ruleset : stabilized the exclude patterns. [#529](https://github.com/wimg/PHPCompatibility/pull/529)
+- :umbrella: Tests : fixed case numbering error. [#525](https://github.com/wimg/PHPCompatibility/pull/525)
+- :books: Tests : added missing test skip explanation. [#521](https://github.com/wimg/PHPCompatibility/pull/521)
+- :wrench: ForbiddenNamesAsInvokedFunctions : method invocations in different versions fixed. [#516](https://github.com/wimg/PHPCompatibility/pull/516)
+- :white_check_mark: PHPCS Upstream merge : sync `FindExtendedClassname()` method with upstream [#507](https://github.com/wimg/PHPCompatibility/pull/507) 
+
+### Credits
+Thanks go out to [Juliette Reinders Folmer] for her contributions to this version. :clap:
+
+
 ## [8.0.1] - 2017-08-07
 
 See all related issues and PRs in the [8.0.1 milestone].
@@ -785,7 +819,8 @@ See all related issues and PRs in the [5.5 milestone].
 
 
 
-[Unreleased]: https://github.com/wimg/PHPCompatibility/compare/8.0.1...HEAD
+[Unreleased]: https://github.com/wimg/PHPCompatibility/compare/8.1.0...HEAD
+[8.1.0]: https://github.com/wimg/PHPCompatibility/compare/8.0.1...8.1.0
 [8.0.1]: https://github.com/wimg/PHPCompatibility/compare/8.0.0...8.0.1
 [8.0.0]: https://github.com/wimg/PHPCompatibility/compare/7.1.5...8.0.0
 [7.1.5]: https://github.com/wimg/PHPCompatibility/compare/7.1.4...7.1.5
@@ -805,6 +840,7 @@ See all related issues and PRs in the [5.5 milestone].
 [7.0]: https://github.com/wimg/PHPCompatibility/compare/5.6...7.0
 [5.6]: https://github.com/wimg/PHPCompatibility/compare/5.5...5.6
 
+[8.1.0 milestone]: https://github.com/wimg/PHPCompatibility/milestone/21
 [8.0.1 milestone]: https://github.com/wimg/PHPCompatibility/milestone/20
 [8.0.0 milestone]: https://github.com/wimg/PHPCompatibility/milestone/19
 [7.1.5 milestone]: https://github.com/wimg/PHPCompatibility/milestone/17
