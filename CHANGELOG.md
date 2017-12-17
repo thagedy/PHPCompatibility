@@ -46,7 +46,7 @@ See all related issues and PRs in the [8.1.0 milestone].
 - :white_check_mark: PHPCS Upstream merge : sync `FindExtendedClassname()` method with upstream [#507](https://github.com/wimg/PHPCompatibility/pull/507) 
 
 ### Credits
-Thanks go out to [Juliette Reinders Folmer] for her contributions to this version. :clap:
+Thanks go out to [Juliette Reinders Folmer] and [Jonathan Van Belle] for their contributions to this version. :clap:
 
 
 ## [8.0.1] - 2017-08-07
@@ -70,7 +70,7 @@ See all related issues and PRs in the [8.0.1 milestone].
 :fire_engine: Temporary hotfix for installed_paths (pending [upstream fix](https://github.com/squizlabs/PHP_CodeSniffer/issues/1591).) [#503](https://github.com/wimg/PHPCompatibility/pull/503)
 
 ### Credits
-Thanks go out to [Juliette Reinders Folmer] and [Jonathan Van Belle] for their contributions to this version. :clap:
+Thanks go out to [Juliette Reinders Folmer] for her contributions to this version. :clap:
 
 
 
