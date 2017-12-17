@@ -70,7 +70,7 @@ See all related issues and PRs in the [8.0.1 milestone].
 :fire_engine: Temporary hotfix for installed_paths (pending [upstream fix](https://github.com/squizlabs/PHP_CodeSniffer/issues/1591).) [#503](https://github.com/wimg/PHPCompatibility/pull/503)
 
 ### Credits
-Thanks go out to [Juliette Reinders Folmer] for her contributions to this version. :clap:
+Thanks go out to [Juliette Reinders Folmer] and [Jonathan Van Belle] for their contributions to this version. :clap:
 
 
 
@@ -871,6 +871,7 @@ See all related issues and PRs in the [5.5 milestone].
 [Gary Jones]: https://github.com/GaryJones
 [Jaap van Otterdijk]: https://github.com/jaapio
 [Jason Stallings]: https://github.com/octalmage
+[Jonathan Van Belle]: https://github.com/Grummfy
 [Juliette Reinders Folmer]: https://github.com/jrfnl
 [Ken Guest]: https://github.com/kenguest
 [Komarov Alexey]: https://github.com/erdraug
