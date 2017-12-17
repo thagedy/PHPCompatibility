@@ -20,30 +20,30 @@ _Nothing yet._
 See all related issues and PRs in the [8.1.0 milestone].
 
 ### Added
-- :star2: New `MagicAutoloadDeprecation` sniff to detect deprecated __autoload functions as deprecated in PHP 7.2. [#540](https://github.com/wimg/PHPCompatibility/pull/540)
-- :star2: New `DynamicAccessToStatic` sniff to detect dynamic access to static methods and properties, as well as class constants, prior to PHP 5.3. [#535](https://github.com/wimg/PHPCompatibility/pull/535)
-- :star2: New `NewConstants` and `RemovedConstants` sniffs to detect usage of new/removed PHP constants. [#526](https://github.com/wimg/PHPCompatibility/pull/525)
+- :star2: New `MagicAutoloadDeprecation` sniff to detect deprecated `__autoload()` functions as deprecated in PHP 7.2. [#540](https://github.com/wimg/PHPCompatibility/pull/540)
+- :star2: New `DynamicAccessToStatic` sniff to detect dynamic access to static methods and properties, as well as class constants, prior to PHP 5.3. [#535](https://github.com/wimg/PHPCompatibility/pull/535) Fixes [#534](https://github.com/wimg/PHPCompatibility/issues/534)
+- :star2: New `NewConstants` and `RemovedConstants` sniffs to detect usage of new/removed PHP constants for all PHP version from PHP 5 up. [#526](https://github.com/wimg/PHPCompatibility/pull/525) Fixes [#263](https://github.com/wimg/PHPCompatibility/issues/263)
 - :star2: New `OptionalRequiredFunctionParameter` sniff to check for missing function call parameters which were required and only became optional in a later PHP version. [#524](https://github.com/wimg/PHPCompatibility/pull/524)
-- :star: `RemovedGlobalVariables` : detection of the use of $php_errormsg with track_errors. [#528](https://github.com/wimg/PHPCompatibility/pull/528)
+- :star: `RemovedGlobalVariables` : detection of the use of `$php_errormsg` with `track_errors` which has been deprecated in PHP 7.2. [#528](https://github.com/wimg/PHPCompatibility/pull/528)
 - :star: `NewFunctions` : detection of all new PHP 7.2 functions added. [#522](https://github.com/wimg/PHPCompatibility/pull/522)
-- :star: Build/PHPCS : added array indentation check. [#538](https://github.com/wimg/PHPCompatibility/pull/538)
 - :books: Documentation : added reporting usage instructions. [#533](https://github.com/wimg/PHPCompatibility/pull/533)
-- :wrench: Travis : build tests are now being run against PHP 7.2 as well. [#511](https://github.com/wimg/PHPCompatibility/pull/511)  
 
 ### Changed
-- :pushpin: `NewClosures` : downgrade "$this found in closure outside class" to warning [#536](https://github.com/wimg/PHPCompatibility/pull/535)
-- :rewind: `NewLanguageConstructs` : updated the version number for T_COALESCE_EQUAL [#523](https://github.com/wimg/PHPCompatibility/pull/523)
-- :pencil2: Sniff:getTestVersion() : simplified regex logic [#520](https://github.com/wimg/PHPCompatibility/pull/520)
+- :pushpin: `NewClosures` : downgraded "$this found in closure outside class" to warning [#536](https://github.com/wimg/PHPCompatibility/pull/535) Fixes [#527](https://github.com/wimg/PHPCompatibility/issues/527)
+- :rewind: `NewLanguageConstructs` : updated the version number for `T_COALESCE_EQUAL` [#523](https://github.com/wimg/PHPCompatibility/pull/523)
+- :pencil2: `Sniff::getTestVersion()` : simplified regex logic [#520](https://github.com/wimg/PHPCompatibility/pull/520)
+- :green_heart: Travis : build tests are now being run against PHP 7.2 as well. [#511](https://github.com/wimg/PHPCompatibility/pull/511)
+- :wrench: Improved check for superfluous whitespaces in files. [#542](https://github.com/wimg/PHPCompatibility/pull/542)
+- :wrench: PHPCS ruleset : stabilized the exclude patterns. [#529](https://github.com/wimg/PHPCompatibility/pull/529)
+- :wrench: Build/PHPCS : added array indentation check. [#538](https://github.com/wimg/PHPCompatibility/pull/538)
+- :white_check_mark: PHPCS Upstream merge : sync `FindExtendedClassname()` method with upstream [#507](https://github.com/wimg/PHPCompatibility/pull/507) 
 
 ### Fixed
 - :wrench: Fixed PHPCS whitespaces. [#543](https://github.com/wimg/PHPCompatibility/pull/543)
-- :wrench: Improved check for superfluous whitespaces in files. [#542](https://github.com/wimg/PHPCompatibility/pull/542)
 - :umbrella: Fixed some unintentional syntax errors in test files. [#539](https://github.com/wimg/PHPCompatibility/pull/539)
-- :wrench: PHPCS ruleset : stabilized the exclude patterns. [#529](https://github.com/wimg/PHPCompatibility/pull/529)
 - :umbrella: Tests : fixed case numbering error. [#525](https://github.com/wimg/PHPCompatibility/pull/525)
 - :books: Tests : added missing test skip explanation. [#521](https://github.com/wimg/PHPCompatibility/pull/521)
-- :wrench: ForbiddenNamesAsInvokedFunctions : method invocations in different versions fixed. [#516](https://github.com/wimg/PHPCompatibility/pull/516)
-- :white_check_mark: PHPCS Upstream merge : sync `FindExtendedClassname()` method with upstream [#507](https://github.com/wimg/PHPCompatibility/pull/507) 
+- :rewind: ForbiddenNamesAsInvokedFunctions : improved recognition of function invocations using forbidden words and prevent warnings for keywords which are no longer forbidden as method names in PHP 7.0+ [#516](https://github.com/wimg/PHPCompatibility/pull/516) Fixes [#515](https://github.com/wimg/PHPCompatibility/issues/515)
 
 ### Credits
 Thanks go out to [Juliette Reinders Folmer] and [Jonathan Van Belle] for their contributions to this version. :clap:
