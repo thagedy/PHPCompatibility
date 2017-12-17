@@ -15,7 +15,7 @@ From version 8.0.0 onwards, [Semantic Versioning](http://semver.org/) is used.
 _Nothing yet._
 
 
-## [8.1.0] - 2017-12-15
+## [8.1.0] - 2017-12-17
 
 See all related issues and PRs in the [8.1.0 milestone].
 
