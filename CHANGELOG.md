@@ -808,7 +808,7 @@ See all related issues and PRs in the [5.6 milestone].
 - :white_check_mark: Compatibility with PHPCS 2.0 - 2.3. [#63](https://github.com/wimg/PHPCompatibility/pull/63), [#65](https://github.com/wimg/PHPCompatibility/pull/65)
 
 ### Credits
-Thanks go out to Daniel J�necke, [Declan Kelly], [Dominic], [Jaap van Otterdijk], [Marin Crnkovic], [Mark Clements], [Nick Pack], [Oliver Klee], [Rowan Collins] and [Sam Van der Borght] for their contributions to this version. :clap:
+Thanks go out to Daniel Jänecke, [Declan Kelly], [Dominic], [Jaap van Otterdijk], [Marin Crnkovic], [Mark Clements], [Nick Pack], [Oliver Klee], [Rowan Collins] and [Sam Van der Borght] for their contributions to this version. :clap:
 
 
 ## 5.5 - 2014-04-04
