@@ -22,7 +22,7 @@ See all related issues and PRs in the [8.1.0 milestone].
 ### Added
 - :star2: New `MagicAutoloadDeprecation` sniff to detect deprecated `__autoload()` functions as deprecated in PHP 7.2. [#540](https://github.com/wimg/PHPCompatibility/pull/540)
 - :star2: New `DynamicAccessToStatic` sniff to detect dynamic access to static methods and properties, as well as class constants, prior to PHP 5.3. [#535](https://github.com/wimg/PHPCompatibility/pull/535) Fixes [#534](https://github.com/wimg/PHPCompatibility/issues/534)
-- :star2: New `NewConstants` and `RemovedConstants` sniffs to detect usage of new/removed PHP constants for all PHP version from PHP 5 up. [#526](https://github.com/wimg/PHPCompatibility/pull/525) Fixes [#263](https://github.com/wimg/PHPCompatibility/issues/263)
+- :star2: New `NewConstants` and `RemovedConstants` sniffs to detect usage of new/removed PHP constants for all PHP versions from PHP 5 up. [#526](https://github.com/wimg/PHPCompatibility/pull/525) Fixes [#263](https://github.com/wimg/PHPCompatibility/issues/263)
 - :star2: New `OptionalRequiredFunctionParameter` sniff to check for missing function call parameters which were required and only became optional in a later PHP version. [#524](https://github.com/wimg/PHPCompatibility/pull/524)
 - :star: `RemovedGlobalVariables` : detection of the use of `$php_errormsg` with `track_errors` which has been deprecated in PHP 7.2. [#528](https://github.com/wimg/PHPCompatibility/pull/528)
 - :star: `NewFunctions` : detection of all new PHP 7.2 functions added. [#522](https://github.com/wimg/PHPCompatibility/pull/522), [#545](https://github.com/wimg/PHPCompatibility/pull/545)
@@ -808,7 +808,7 @@ See all related issues and PRs in the [5.6 milestone].
 - :white_check_mark: Compatibility with PHPCS 2.0 - 2.3. [#63](https://github.com/wimg/PHPCompatibility/pull/63), [#65](https://github.com/wimg/PHPCompatibility/pull/65)
 
 ### Credits
-Thanks go out to Daniel Jänecke, [Declan Kelly], [Dominic], [Jaap van Otterdijk], [Marin Crnkovic], [Mark Clements], [Nick Pack], [Oliver Klee], [Rowan Collins] and [Sam Van der Borght] for their contributions to this version. :clap:
+Thanks go out to Daniel Jï¿½necke, [Declan Kelly], [Dominic], [Jaap van Otterdijk], [Marin Crnkovic], [Mark Clements], [Nick Pack], [Oliver Klee], [Rowan Collins] and [Sam Van der Borght] for their contributions to this version. :clap:
 
 
 ## 5.5 - 2014-04-04
