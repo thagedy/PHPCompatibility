@@ -25,7 +25,7 @@ See all related issues and PRs in the [8.1.0 milestone].
 - :star2: New `NewConstants` and `RemovedConstants` sniffs to detect usage of new/removed PHP constants for all PHP version from PHP 5 up. [#526](https://github.com/wimg/PHPCompatibility/pull/525) Fixes [#263](https://github.com/wimg/PHPCompatibility/issues/263)
 - :star2: New `OptionalRequiredFunctionParameter` sniff to check for missing function call parameters which were required and only became optional in a later PHP version. [#524](https://github.com/wimg/PHPCompatibility/pull/524)
 - :star: `RemovedGlobalVariables` : detection of the use of `$php_errormsg` with `track_errors` which has been deprecated in PHP 7.2. [#528](https://github.com/wimg/PHPCompatibility/pull/528)
-- :star: `NewFunctions` : detection of all new PHP 7.2 functions added. [#522](https://github.com/wimg/PHPCompatibility/pull/522)
+- :star: `NewFunctions` : detection of all new PHP 7.2 functions added. [#522](https://github.com/wimg/PHPCompatibility/pull/522), [#545](https://github.com/wimg/PHPCompatibility/pull/545)
 - :books: Documentation : added reporting usage instructions. [#533](https://github.com/wimg/PHPCompatibility/pull/533)
 
 ### Changed
